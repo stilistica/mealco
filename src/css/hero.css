@@ -1,0 +1,105 @@
+.hero {
+  background: url(/img/hero/hero-mob.png) center top no-repeat;
+  background-size: 375px auto;
+  position: relative;
+  overflow: hidden;
+  min-height: 730px;
+  margin: -10px -15px 0 -8px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-top: 220px;
+
+  /* background: url(/img/hero/hero-mob.png) center/cover no-repeat;
+  position: relative;
+  height: 730px; */
+}
+.hero-container h1 {
+  font-family: var(--font-family);
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 1.04651;
+  color: var(--color-title);
+}
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hero-info p {
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.hero-button {
+  background-color: var(--color-white);
+  border-radius: 50px;
+
+  box-shadow: 7px 10px 0px var(--color-black);
+  margin-right: 10px;
+  transition: all 0.3s ease;
+}
+.hero-button a {
+  display: block;
+  box-sizing: border-box;
+
+  border-radius: 50px;
+  width: 320px;
+  height: 85px;
+  padding-top: 20px;
+  border: 2px solid var(--color-black);
+
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 22px;
+}
+.hero-button:hover {
+  box-shadow: none;
+  transform: translate(7px, 10px);
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    background: url(/img/hero/hero.png) center top no-repeat;
+    background-size: 1440px auto;
+    min-height: 983px;
+    min-width: 1440px;
+  }
+
+  .hero-container {
+    gap: 20px;
+  }
+  .hero-container h1 {
+    font-weight: 700;
+    font-size: 140px;
+    line-height: 1.1;
+  }
+  .hero-info {
+    gap: 40px;
+    align-items: center;
+  }
+  .hero-info p {
+    width: 1050px;
+    font-weight: 400;
+    font-size: 30px;
+  }
+
+  .hero-button {
+    box-shadow: 10px 13px 0px var(--color-black);
+    margin-right: 13px;
+  }
+  .hero-button a {
+    width: 1280px;
+    font-size: 32px;
+  }
+  .hero-button:hover {
+    box-shadow: none;
+    transform: translate(10px, 13px);
+  }
+}

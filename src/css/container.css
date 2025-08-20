@@ -1,5 +1,6 @@
 /* Styles for Mobile devices */
 .container {
+  box-sizing: border-box;
   width: 375px;
   margin: 0 auto;
   padding: 0 23px;

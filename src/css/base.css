@@ -10,7 +10,7 @@
   --color-ample: #d7f6ff;
   --color-proper: #fbe0c9;
   --color-urban: #faf2e3;
-  --color-hero: #c4c4c4;
+  --color-hero: #e5fcf5;
   --color-press: #bc8cff;
   --color-brands: #06d2cc;
   --color-orange: #fbb251;
@@ -18,10 +18,11 @@
 
   --color-white: #ffffff;
   --color-black: #000;
-  --color-title: #0A0909;
+  --color-title: #0a0909;
 
   color: var(--color-black);
   background-color: var(--color-white);
+  font-family: var(--second-family);
 }
 
 body {
@@ -30,6 +31,9 @@ body {
   /* min-width: 100vw;
   min-height: 100vh;
   margin: 0; */
+}
+body[data-scroll-locked='true'] {
+  overflow: hidden;
 }
 
 /* main {

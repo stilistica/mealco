@@ -1,20 +1,57 @@
-<header class="header">
-  <div class="container">
-    <div class="wrapper">
-      <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-act}" href="./page-2.html"
-              >Page 2</a
-            >
+<header class="header-container">
+  <div class="header">
+    <div class="container">
+    <div class="header-container-style">
+      <a class="header-logo" href="../index.html">
+        <svg>
+          <use href="/img/sprite.svg#icon-mealco"></use>
+        </svg>
+      </a>
+      <button class="header-btn-menu" data-action="toggle-menu">
+        <svg class="burger-menu">
+          <use
+            href="/img/sprite.svg#icon-burger-menu"
+            data-action="use-burger"
+          ></use>
+        </svg>
+      </button>
+      <nav class="header-nav-desctop">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="../pages/brands.html">Brands</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {=$highlight-curr}" href="./page-3.html"
-              >Page 3</a
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="../pages/press.html">Press</a>
+          </li>
+          <li class="header-nav-item header-button">
+            <a class="header-nav-link" href="../pages/form.html"
+              >Join our waitlist!</a
             >
           </li>
         </ul>
       </nav>
     </div>
+    <div
+      class="header-mobile-menu"
+      data-action="mobile-menu"
+      data-active="false"
+    >
+      <nav class="header-nav-mobile">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="../pages/brands.html">Brands</a>
+          </li>
+          <li class="header-nav-item">
+            <a class="header-nav-link" href="../pages/press.html">Press</a>
+          </li>
+          <li class="header-nav-item header-button" >
+            <a class="header-nav-link" href="../pages/form.html"
+              >Join our waitlist!</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
   </div>
 </header>
