@@ -1,0 +1,114 @@
+.conteiner-swiper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+.conteiner-swiper h2 {
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: 26px;
+  line-height: 1.1;
+  color: var(--color-title);
+}
+
+.swiper-can-see {
+  margin-right: -23px !important;
+  padding-bottom: 40px !important;
+}
+.margin-swiper {
+  margin-right: -10px !important;
+}
+/* .brands-cards-home {
+  display: flex;
+} */
+.swiper-buttons-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+.swiper-buttons-container {
+  display: flex;
+  gap: 64px;
+  margin: 0 auto;
+}
+.swiper-button {
+  border-radius: 50px;
+  width: 68px;
+  height: 68px;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+  box-shadow: 7px 5px 0px var(--color-black);
+  margin: 0 0 7px 5px;
+  transition: all 0.1s ease;
+}
+.swiper-button:active {
+  box-shadow: none;
+  transform: translate(7px, 5px);
+}
+.swiper-button svg {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
+.swiper-button[disabled] svg {
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 1440px) {
+  .conteiner-swiper {
+    gap: 40px;
+  }
+  .conteiner-swiper h2 {
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 1.18182;
+  }
+  .div-swiper {
+    position: relative !important;
+  }
+  .swiper-can-see {
+    margin-right: 0 !important;
+    padding-bottom: 163px !important;
+  }
+  .margin-swiper {
+    margin-right: 0 !important;
+  }
+  .swiper-slide {
+  }
+  .swiper-buttons-center {
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .swiper-buttons-container {
+    gap: 787px;
+  }
+  .swiper-button {
+    width: 78px;
+    height: 78px;
+    box-shadow: 7px 2px 0px var(--color-black);
+    margin: 0 0 2px 7px;
+    z-index: 5;
+  }
+  .swiper-button:active {
+    transform: translate(7px, 2px);
+  }
+  .swiper-button svg {
+    width: 80px;
+    height: 80px;
+  }
+  .swiper-slide-next {
+    transition: all 0.5s ease;
+
+    z-index: 1000 !important;
+    transform: translateY(150px) !important;
+  }
+}

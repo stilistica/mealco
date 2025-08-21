@@ -6,12 +6,16 @@ const cardsHtmlBrands = brandsCards.map(({ imgUrl, iconUrl, pageUrl }) => {
   return `
   <li class="brands-card swiper-slide">
     <img src="${imgUrl}" alt="${imgUrl}" />
-    <svg>
-      <use href="${iconUrl}"></use>
-    </svg>
-    <a href="${pageUrl}">
-    Learn more!
-    </a>
+    <div class="brands-card-div">
+      <svg>
+        <use href="${iconUrl}"></use>
+      </svg>
+      <div class="brand-car-more">
+        <a href="${pageUrl}">
+        Learn more!
+        </a>
+      </div>
+    </div>
   </li>
   `;
 });

@@ -54,3 +54,6 @@ main:has(.back-link) {
 .color-orange {
   background-color: var(--color-orange);
 }
+.color-brands {
+  background-color: var(--color-brands);
+}

@@ -1,0 +1,81 @@
+.brands-card {
+  background-color: var(--color-white);
+  border-radius: 8px;
+  border: 1px solid var(--color-black);
+
+  box-shadow: 9px 9px 0px var(--color-black);
+  margin-right: 9px;
+}
+.brands-card img {
+  border-bottom: 1px solid var(--color-black);
+  width: 100%;
+}
+.brands-card-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+.brands-card-div svg {
+  max-width: 90px;
+  max-height: 70px;
+}
+.brand-car-more {
+  background-color: transparent;
+  border-radius: 50px;
+  padding: 10px 0;
+
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 14px;
+
+  box-shadow: 5px 5px 0px var(--color-black);
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+.brand-car-more a {
+  background-color: var(--color-white);
+  border-radius: 50px;
+  padding: 10px 16px;
+  box-sizing: border-box;
+
+  border: 2px solid var(--color-black);
+}
+.brand-car-more:hover {
+  box-shadow: none;
+  transform: translate(5px, 5px);
+}
+
+.brands-cards-home .brands-card {
+  width: 291px;
+}
+.brands-cards-home .brands-card-div {
+  padding: 0 15px;
+}
+
+@media only screen and (min-width: 1440px) {
+  .brands-card {
+    box-shadow: 12px 12px 0px var(--color-black);
+    margin-right: 12px;
+  }
+  .brands-card-div {
+    height: 120px;
+  }
+  .brands-card-div svg {
+    max-width: 100px;
+  }
+  .brand-car-more {
+    padding: 12px 0;
+    font-size: 18px;
+  }
+  .brand-car-more a {
+    padding: 12px 25px;
+  }
+
+  .brands-cards-home .brands-card {
+    width: 394px !important;
+  }
+  .brands-cards-home .brands-card-div {
+    padding: 0 30px;
+  }
+}
