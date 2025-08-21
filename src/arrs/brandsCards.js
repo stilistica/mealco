@@ -1,8 +1,13 @@
+import moreishImgUrl from '/img/brands/moreish.png';
+import moreishIconsUrl from '/img/brands-logos/moreish-logo.svg';
+
+
+
 export const brandsCards = [
   {
-    imgUrl: '/img/brands/moreish.png',
-    iconUrl: '/img/brands-logos/moreish-logo.svg',
-    pageUrl: '/brandsPages/moreish.html',
+    imgUrl: `${moreishImgUrl}`,
+    iconUrl: `${moreishIconsUrl}`,
+    pageUrl: './moreish.html',
   },
   {
     imgUrl: '/img/brands/cayenne.png',
