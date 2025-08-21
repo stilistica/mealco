@@ -44,8 +44,8 @@
   border: none;
 
   background-color: transparent;
-  box-shadow: 7px 5px 0px black;
-  margin-right: 5px;
+  box-shadow: 7px 5px 0px var(--color-black);
+  margin:0 0 7px 5px;
   transition: all 0.1s ease;
 }
 .header-btn-menu:active {
@@ -169,6 +169,7 @@
   }
   .header-nav-desctop {
     display: block;
+    margin-bottom: 10px;
   }
   .header-nav-list {
     flex-direction: row;
