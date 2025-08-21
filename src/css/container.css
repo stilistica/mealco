@@ -5,11 +5,19 @@
   margin: 0 auto;
   padding: 0 23px;
 }
+.container-home {
+  padding-top: 66px;
+  padding-bottom: 66px;
+}
 
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1440px) {
   .container {
     width: 1440px;
     padding: 0 80px;
+  }
+  .container-home {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }

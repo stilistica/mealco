@@ -42,3 +42,15 @@ body[data-scroll-locked='true'] {
 main:has(.back-link) {
   text-align: center;
 } */
+.border {
+  border-bottom: 1px solid var(--color-title);
+}
+.border-top {
+  border-top: 1px solid var(--color-title);
+}
+.color-press {
+  background-color: var(--color-press);
+}
+.color-orange {
+  background-color: var(--color-orange);
+}

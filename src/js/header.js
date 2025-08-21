@@ -9,13 +9,16 @@ const useEl = document.querySelector('[data-action="use-burger"]');
 const btnForm = document.querySelector('.header-button');
 
 const header = document.querySelector('.header');
+const headerSection = document.querySelector('.header-container');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY > 0) {
     header.classList.add(`scrolled`);
+    headerSection.classList.add(`scrolled`);
     mobileMenu.classList.add(`scrolled`);
   } else {
     header.classList.remove('scrolled');
+    headerSection.classList.remove('scrolled');
     mobileMenu.classList.remove('scrolled');
   }
 });
@@ -24,6 +27,7 @@ burgerBtn.addEventListener('click', e => {
   const isBurger = useEl.getAttribute('href') === iconBurger;
   useEl.setAttribute('href', isBurger ? iconClose : iconBurger);
   header.classList.toggle(`open`);
+  headerSection.classList.toggle(`open`);
   btnForm.classList.add(`form-open`);
 
   const isActive = mobileMenu.getAttribute('data-active') === 'true';
@@ -45,6 +49,7 @@ window.addEventListener('resize', () => {
     mobileMenu.setAttribute('data-active', 'false');
     document.body.setAttribute('data-scroll-locked', 'false');
     header.classList.remove('open');
+    headerSection.classList.remove('open');
     useEl.setAttribute('href', iconBurger);
   }
 });

@@ -1,3 +1,7 @@
+.hero-color {
+  background-color: var(--color-hero);
+  border-ottom: 1px solid var(--color-title);
+}
 .hero {
   background: url(/img/hero/hero-mob.png) center top no-repeat;
   background-size: 375px auto;
