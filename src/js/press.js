@@ -1,1 +1,21 @@
 import { pressCards } from '../arrs/pressCards.js';
+
+const containerNews = document.querySelector('.list-news');
+
+const cardsHtmlPress = pressCards.map(({ imgUrl, text }) => {
+  return `
+  <li class="press-card">
+    <img src="${imgUrl}" alt="${imgUrl}" />
+    <p>${text}</p>
+  </li>
+  `;
+});
+
+cardsHtmlPress.forEach((card, index) => {
+  if (index < 4) {
+    containerNews.innerHTML += card;
+  } else {
+
+  }
+})
+
