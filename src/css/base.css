@@ -57,3 +57,6 @@ main:has(.back-link) {
 .color-brands {
   background-color: var(--color-brands);
 }
+.color-green {
+  background-color: var(--color-green);
+}
