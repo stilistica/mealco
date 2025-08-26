@@ -23,24 +23,45 @@
                 <use href="/img/brands-logos/cayenne-logo.svg"></use>
               </svg>
               <p>
-                Nashville Hot Chicken and irresistible Southern sides epitomize comfort food.
+                Nashville Hot Chicken and irresistible Southern sides epitomize
+                comfort food.
               </p>
             </div>
           </div>
+          <picture>
+            <source
+              srcset="/img/cayenne-img/desk/hero.png"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/img/cayenne-img/mob/hero.png"
+              media="(max-width: 1439px)"
+            />
+            <img src="/img/cayenne-img/mob/hero.png" alt="cayenne" />
+          </picture>
+        </div>
+      </section>
+      <section class="border color-cayenne">
+        <div class="container">
+          <div class="brand-chef">
+            <h2 class="cayenne-chef-title">Crafted by Chef Hillary Sterling</h2>
             <picture>
               <source
-                srcset="/img/cayenne-img/desk/hero.png"
+                srcset="/img/cayenne-img/desk/chef.png"
                 media="(min-width: 1440px)"
               />
               <source
-                srcset="/img/cayenne-img/mob/hero.png"
+                srcset="/img/cayenne-img/mob/chef.png"
                 media="(max-width: 1439px)"
               />
-              <img src="/img/cayenne-img/mob/hero.png" alt="cayenne" />
+              <img src="/img/cayenne-img/mob/chef.png" alt="cayenne-chef" />
             </picture>
+            <p class="cayenne-chef-text">
+              Born and raised in NYC, Chef Hillary Sterling fell in love with food & hospitality at a young age. She flourished while working with renowned chefs from Bobby Flay, to Joe Bastianich, and Missy Robbins. Hillary was formerly chef of acclaimed Italian restaurant, Vic’s and is currently chef/co-developer of Cayenne.
+            </p>
+          </div>
         </div>
       </section>
-      <h1>Cayenne</h1>
     </main>
 
     <load src="./partials/footer.html" />
