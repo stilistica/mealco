@@ -4,98 +4,144 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
-    <script type="module" crossorigin src="/mealco/assets/header-DM-j5sM6.js"></script>
-    <script type="module" crossorigin src="/mealco/assets/vendor-D41edCa4.js"></script>
-    <script type="module" crossorigin src="/mealco/assets/brandCards-CC1NHlPv.js"></script>
-    <script type="module" crossorigin src="/mealco/assets/press-BC3b1PWb.js"></script>
-    <script type="module" crossorigin src="/mealco/assets/main-DDN77ngY.js"></script>
-    <link rel="stylesheet" crossorigin href="/mealco/assets/header-Cq29KjyL.css">
-    <link rel="stylesheet" crossorigin href="/mealco/assets/vendor-Be9b3THL.css">
+    <script type="module" crossorigin src="/mealco/form.js"></script>
+    <link rel="modulepreload" crossorigin href="/mealco/assets/styles-CbzWml-5.js">
+    <link rel="stylesheet" crossorigin href="/mealco/assets/styles-BKzKAVhF.css">
   </head>
   <body>
-    <header class="header-container">
+    <header class="header-container header-container-form">
   <div class="header">
     <div class="container">
-    <div class="header-container-style">
-      <a class="header-logo" href="./index.html">
-        <svg>
-          <use href="/mealco/assets/sprite-DxQWIzdk.svg#icon-mealco"></use>
-        </svg>
-      </a>
-      <button class="header-btn-menu" data-action="toggle-menu">
-        <svg class="burger-menu">
-          <use
-            href="/mealco/assets/sprite-DxQWIzdk.svg#icon-burger-menu"
-            data-action="use-burger"
-          ></use>
-        </svg>
-      </button>
-      <nav class="header-nav-desctop">
-        <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="./brands.html">Brands</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="./press.html">Press</a>
-          </li>
-          <li class="header-nav-item header-button">
-            <a class="header-nav-link" href="./form.html"
-              >Join our waitlist!</a
-            >
-          </li>
-        </ul>
-      </nav>
+      <div class="header-container-style">
+        <a class="header-logo" href="./index.html">
+          <svg>
+            <use href="/mealco/assets/sprite-DxQWIzdk.svg#icon-mealco"></use>
+          </svg>
+        </a>
+        <a href="./index.html" class="header-btn-menu">
+          <svg class="burger-menu">
+            <use
+              href="/mealco/assets/sprite-DxQWIzdk.svg#icon-close"
+            ></use>
+          </svg>
+        </a>
+        <nav class="header-nav-desctop">
+          <ul class="header-nav-list">
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./brands.html">Brands</a>
+            </li>
+            <li class="header-nav-item">
+              <a class="header-nav-link" href="./press.html">Press</a>
+            </li>
+            <li class="header-nav-item header-button">
+              <a class="header-nav-link" href="./form.html"
+                >Join our waitlist!</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div
-      class="header-mobile-menu"
-      data-action="mobile-menu"
-      data-active="false"
-    >
-      <nav class="header-nav-mobile">
-        <ul class="header-nav-list">
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="./brands.html">Brands</a>
-          </li>
-          <li class="header-nav-item">
-            <a class="header-nav-link" href="./press.html">Press</a>
-          </li>
-          <li class="header-nav-item header-button" >
-            <a class="header-nav-link" href="./form.html"
-              >Join our waitlist!</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
   </div>
 </header>
 
-    <main></main>
-    <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-div-icon">
-      <svg class="footer-icon">
-      <use href="/mealco/assets/sprite-DxQWIzdk.svg#icon-mealco-green"></use>
-    </svg>
-    </div>
-    <div class="footer-info">
-      <ul class="footer-nav-list">
-        <li class="footer-nav-item">
-          <a class="footer-nav-link" href="./form.html">Carrers</a>
-        </li>
-        <li class="footer-nav-item">
-          <a class="footer-nav-link" href="./brands.html">Brands</a>
-        </li>
-        <li class="footer-nav-item">
-          <a class="footer-nav-link" href="./press.html">Press</a>
-        </li>
-      </ul>
-      <p>2022 © Mealco</p>
-    </div>
-  </div>
-</footer>
+    <main class="hero-color">
+      <div class="form-section">
+        <div class="container">
+          <div class="form-container">
+            <a href="./index.html" class="header-btn-menu close-form">
+              <svg class="burger-menu">
+                <use href="/mealco/assets/sprite-DxQWIzdk.svg#icon-close"></use>
+              </svg>
+            </a>
+            <div class="form-info">
+              <div class="form-div">
+                <h1>Join our waitlist</h1>
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last name</label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input pattern="^\+?[0-9\s\-]{10,15}$" type="tel" id="phone" name="phone" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="restaurant-name">Restaurant name</label>
+                    <input
+                      type="text"
+                      id="restaurant-name"
+                      name="restaurant-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="restaurant-address">Restaurant address</label>
+                    <input
+                      type="text"
+                      id="restaurant-address"
+                      name="restaurant-address"
+                      required
+                    />
+                  </div>
 
-
+                  <button type="submit" class="btn-form" disabled>
+                    Submit
+                  </button>
+                </form>
+              </div>
+              <div class="form-partners">
+                <h2>Mealco’s partners get</h2>
+                <ul class="part-list">
+                  <li class="part-li">
+                    <svg>
+                      <use href="/mealco/assets/sprite-DxQWIzdk.svg#icon-star-list"></use>
+                    </svg>
+                    <p>Exclusivity over their territory</p>
+                  </li>
+                  <li class="part-li">
+                    <svg>
+                      <use href="/mealco/assets/sprite-DxQWIzdk.svg#icon-star-list"></use>
+                    </svg>
+                    <p>Free marketing</p>
+                  </li>
+                  <li class="part-li">
+                    <svg>
+                      <use href="/mealco/assets/sprite-DxQWIzdk.svg#icon-star-list"></use>
+                    </svg>
+                    <p>Free technology</p>
+                  </li>
+                  <li class="part-li">
+                    <svg>
+                      <use href="/mealco/assets/sprite-DxQWIzdk.svg#icon-star-list"></use>
+                    </svg>
+                    <p>Training</p>
+                  </li>
+                  <li class="part-li">
+                    <svg>
+                      <use href="/mealco/assets/sprite-DxQWIzdk.svg#icon-star-list"></use>
+                    </svg>
+                    <p>24/7 Support</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
