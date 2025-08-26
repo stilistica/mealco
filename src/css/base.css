@@ -60,3 +60,27 @@ main:has(.back-link) {
 .color-green {
   background-color: var(--color-green);
 }
+.color-moreish {
+  background-color: var(--color-moreish);
+}
+.color-cayenne {
+  background-color: var(--color-cayenne);
+}
+.color-mochidoki {
+  background-color: var(--color-mochidoki);
+}
+.color-nuchas {
+  background-color: var(--color-nuchas);
+}
+.color-pressed {
+  background-color: var(--color-pressed);
+}
+.color-ample {
+  background-color: var(--color-ample);
+}
+.color-proper {
+  background-color: var(--color-proper);
+}
+.color-urban {
+  background-color: var(--color-urban);
+}

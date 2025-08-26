@@ -7,14 +7,45 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" />
+    <load src="./partials/headerBrand.html" />
 
     <main>
-      <h1>pressed</h1>
+      <section class="border color-pressed">
+        <div class="brand-hero">
+          <div class="brand-hero-info">
+            <a href="./brands.html" class="header-btn-menu back-bnt">
+              <svg class="burger-menu">
+                <use href="/img/sprite.svg#icon-left"></use>
+              </svg>
+            </a>
+            <div>
+              <svg class="pressed-svg">
+                <use href="/img/brands-logos/pressed-logo.svg"></use>
+              </svg>
+              <p>
+                Real, plant-based food holds the power to not only nourish our
+                bodies but inspire a lifelong wellness journey.
+              </p>
+            </div>
+          </div>
+          <picture>
+            <source
+              srcset="/img/pressed-img/desk/hero.png"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/img/pressed-img/mob/hero.png"
+              media="(max-width: 1439px)"
+            />
+            <img src="/img/pressed-img/mob/hero.png" alt="pressed" />
+          </picture>
+        </div>
+      </section>
+      <h1>Pressed</h1>
     </main>
 
     <load src="./partials/footer.html" />
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="js/header.js"></script>
   </body>
 </html>

@@ -49,6 +49,10 @@
   width: 120px;
   height: 27px;
 }
+.btns-header-brands {
+  display: flex;
+  gap: 24px;
+}
 .header-btn-menu {
   border-radius: 50px;
   width: 50px;

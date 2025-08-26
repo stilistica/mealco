@@ -1,0 +1,151 @@
+.brand-hero {
+  padding-top: 164px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  position: relative;
+}
+.back-bnt {
+  display: none;
+}
+.brand-hero-info {
+  box-sizing: border-box;
+  width: 375px;
+  margin: 0 auto;
+  padding: 0 23px;
+}
+
+/* ----------------- hero svg mob / */
+
+.moreish-svg {
+  width: 100px;
+  height: 70px;
+}
+.cayenne-svg {
+  width: 130px;
+  height: 43px;
+}
+.mochidoki-svg {
+  width: 201px;
+  height: 41px;
+}
+.nuchas-svg {
+  width: 77px;
+  height: 77px;
+}
+.pressed-svg {
+  width: 147px;
+  height: 40px;
+}
+.ample-svg {
+  width: 134px;
+  height: 62px;
+}
+.num-svg {
+  width: 108px;
+  height: 80px;
+}
+.urban-svg {
+  width: 235px;
+  height: 35px;
+}
+
+/* ------------------ */
+
+.brand-hero-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.brand-hero-info p {
+  font-weight: 200;
+  font-size: 22px;
+}
+.brand-hero img {
+  width: 375px;
+  margin: 0 auto;
+  border-top: 1px solid var(--color-black);
+}
+@media only screen and (min-width: 1440px) {
+  .brand-hero {
+    flex-direction: row;
+    justify-content: space-between;
+
+    width: 1440px;
+    padding: 132px 80px 80px 80px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .brand-hero-info {
+    display: flex;
+    flex-direction: column;
+    padding-right: 0;
+    gap: 155px;
+    width: 626px;
+
+    line-height: 1.2;
+
+    margin: 0;
+    padding: 0;
+  }
+  .brand-hero-info div {
+    gap: 32px;
+  }
+  .back-bnt {
+    display: block;
+    width: 79px;
+    height: 79px;
+  }
+  .back-bnt svg {
+    width: 81px;
+    height: 81px;
+  }
+  /* ----------------- hero svg/ */
+
+  .moreish-svg {
+    width: 250px;
+    height: 130px;
+  }
+  .cayenne-svg {
+    width: 333px;
+    height: 109px;
+  }
+  .mochidoki-svg {
+    width: 435px;
+    height: 86px;
+  }
+  .nuchas-svg {
+    width: 120px;
+    height: 120px;
+  }
+  .pressed-svg {
+    width: 322px;
+    height: 87px;
+  }
+  .ample-svg {
+    width: 236px;
+    height: 109px;
+  }
+  .num-svg {
+    width: 206px;
+    height: 153px;
+  }
+  .num-svg {
+    width: 380px;
+    height: 57px;
+  }
+
+  /* --------------- */
+
+  .brand-hero-info p {
+    font-size: 28px;
+  }
+  .brand-hero img {
+    border: 1px solid var(--color-black);
+    border-radius: 10px;
+    width: 594px !important;
+    height: auto;
+    margin: 0;
+  }
+}

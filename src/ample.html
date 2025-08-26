@@ -7,14 +7,46 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" />
+    <load src="./partials/headerBrand.html" />
 
     <main>
-      <h1>ample</h1>
+      <section class="border color-ample">
+        <div class="brand-hero">
+          <div class="brand-hero-info">
+            <a href="./brands.html" class="header-btn-menu back-bnt">
+              <svg class="burger-menu">
+                <use href="/img/sprite.svg#icon-left"></use>
+              </svg>
+            </a>
+            <div>
+              <svg class="ample-svg">
+                <use href="/img/brands-logos/ample-logo.svg"></use>
+              </svg>
+              <p>
+                Ample Hills make all of its ice cream in Brooklyn. From start to
+                finish, every flavor is imagined, churned, and taste-tested in
+                their kitchen.
+              </p>
+            </div>
+          </div>
+          <picture>
+            <source
+              srcset="/img/ample-img/desc/hero.png"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/img/ample-img/mob/hero.png"
+              media="(max-width: 1439px)"
+            />
+            <img src="/img/ample-img/mob/hero.png" alt="ample" />
+          </picture>
+        </div>
+      </section>
+      <h1>Ample</h1>
     </main>
 
     <load src="./partials/footer.html" />
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="js/header.js"></script>
   </body>
 </html>

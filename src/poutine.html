@@ -7,14 +7,44 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" />
+    <load src="./partials/headerBrand.html" />
 
     <main>
-      <h1>poutine</h1>
+      <section class="border">
+        <div class="brand-hero">
+          <div class="brand-hero-info">
+            <a href="./brands.html" class="header-btn-menu back-bnt">
+              <svg class="burger-menu">
+                <use href="/img/sprite.svg#icon-left"></use>
+              </svg>
+            </a>
+            <div>
+              <svg class="nuchas-svg">
+                <use href="/img/brands-logos/poutine-logo.svg"></use>
+              </svg>
+              <p>
+                What is poutine, you ask? It's a base of double-fried french fries topped with cheese curds, meat (sometimes), and gravy, created entirely from homemade ingredients.
+              </p>
+            </div>
+          </div>
+          <picture>
+            <source
+              srcset="/img/poutine-img/desc/hero.png"
+              media="(min-width: 1440px)"
+            />
+            <source
+              srcset="/img/poutine-img/mob/hero.png"
+              media="(max-width: 1439px)"
+            />
+            <img src="/img/poutine-img/mob/hero.png" alt="poutine" />
+          </picture>
+        </div>
+      </section>
+      <h1>Poutine</h1>
     </main>
 
     <load src="./partials/footer.html" />
 
-    <script type="module" src="main.js"></script>
+    <script type="module" src="js/header.js"></script>
   </body>
 </html>
