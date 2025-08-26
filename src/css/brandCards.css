@@ -49,8 +49,17 @@
 .brands-cards-home .brands-card {
   width: 291px;
 }
+.brands-page-list .brands-card {
+  width: 320px;
+}
 .brands-cards-home .brands-card-div {
   padding: 0 15px;
+}
+.brands-page-list .brands-card-div {
+  padding: 0 16px;
+}
+.brands-page-list .brands-card-div {
+  height: 110px;
 }
 
 @media only screen and (min-width: 1440px) {
@@ -77,5 +86,11 @@
   }
   .brands-cards-home .brands-card-div {
     padding: 0 30px;
+  }
+  .brands-page-list .brands-card {
+    width: 394px !important;
+  }
+  .brands-page-list .brands-card-div {
+    padding: 0 20px;
   }
 }

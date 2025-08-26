@@ -1,0 +1,39 @@
+.brands-page {
+  display: grid;
+  gap: 20px;
+}
+.brands-page h1 {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 1.04651;
+  color: var(--color-title);
+}
+.brands-page p {
+  font-weight: 300;
+  font-size: 24px;
+}
+.brands-page-list {
+  display: grid;
+  gap: 30px;
+}
+@media only screen and (min-width: 1440px) {
+  .brands-page {
+    gap: 40px;
+  }
+  .brands-page h1 {
+    font-size: 100px;
+    line-height: 1.15;
+  }
+  .brands-page p {
+    width: 823px;
+    font-weight: 300;
+    font-size: 30px;
+  }
+  .brands-page-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 42px;
+  }
+}
