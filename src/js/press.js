@@ -11,11 +11,8 @@ const cardsHtmlPress = pressCards.map(({ imgUrl, text }) => {
   `;
 });
 
-cardsHtmlPress.forEach((card, index) => {
-  if (index < 4) {
-    containerNews.innerHTML += card;
-  } else {
+const maxItemsPress = containerNews.dataset.max
+  ? parseInt(containerNews.dataset.max)
+  : cardsHtmlPress.length;
 
-  }
-})
-
+containerNews.innerHTML = cardsHtmlPress.slice(0, maxItemsPress).join('');

@@ -1,0 +1,34 @@
+.press-page {
+  display: grid;
+  gap: 30px;
+}
+.press-page h1 {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 43px;
+  line-height: 1.04651;
+  color: var(--color-title);
+}
+.page-email {
+  font-weight: 400;
+  font-size: 22px;
+}
+.page-email a:hover {
+  font-weight: 600;
+  /* font-size: 22px; */
+}
+@media only screen and (min-width: 1440px) {
+  .press-page {
+    gap: 40px;
+  }
+  .press-page h1 {
+    font-size: 100px;
+    line-height: 1.15;
+  }
+  .page-email {
+    font-weight: 400;
+    font-size: 30px;
+    padding-top: 60px;
+  }
+
+}
