@@ -100,6 +100,15 @@
   font-weight: 300;
   font-size: 20px;
 }
+
+/* ------------ section menu */
+.container-menu {
+  padding: 40px 0 70px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 @media only screen and (min-width: 1440px) {
   .brand-hero {
     flex-direction: row;
@@ -218,5 +227,13 @@
   }
   .brand-chef p.cayenne-chef-text {
     padding-top: 216px;
+  }
+
+  /* ------------ section menu */
+  .container-menu {
+    padding: 60px 0 110px 0;
+  }
+  .filter-menu {
+    display: none;
   }
 }
