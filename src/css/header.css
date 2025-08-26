@@ -5,6 +5,13 @@
   width: 100%;
   z-index: 1000;
 }
+.header-container-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
 .header {
   width: 375px;
   margin: 0 auto;
@@ -158,10 +165,10 @@
 @media only screen and (min-width: 1440px) {
   .header {
     width: 1440px;
-    padding: 40px 0 0 0;
+    padding: 10px 0 0 0;
   }
   .header.scrolled {
-    padding: 30px 0 0 0;
+    padding: 10px 0 0 0;
   }
   .header-container-style {
     padding: 15px 50px;

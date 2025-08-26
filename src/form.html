@@ -7,10 +7,105 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <load src="./partials/header.html" />
-    <main></main>
-    <load src="./partials/footer.html" />
+    <load src="./partials/headerForm.html" />
+    <main class="hero-color">
+      <div class="form-section">
+        <div class="container">
+          <div class="form-container">
+            <a href="./index.html" class="header-btn-menu close-form">
+              <svg class="burger-menu">
+                <use href="/img/sprite.svg#icon-close"></use>
+              </svg>
+            </a>
+            <div class="form-info">
+              <div class="form-div">
+                <h1>Join our waitlist</h1>
+                <form>
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="last-name">Last name</label>
+                    <input
+                      type="text"
+                      id="last-name"
+                      name="last-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input pattern="^\+?[0-9\s\-]{10,15}$" type="tel" id="phone" name="phone" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="restaurant-name">Restaurant name</label>
+                    <input
+                      type="text"
+                      id="restaurant-name"
+                      name="restaurant-name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="restaurant-address">Restaurant address</label>
+                    <input
+                      type="text"
+                      id="restaurant-address"
+                      name="restaurant-address"
+                      required
+                    />
+                  </div>
 
-    <script type="module" src="main.js"></script>
+                  <button type="submit" class="btn-form" disabled>
+                    Submit
+                  </button>
+                </form>
+              </div>
+              <div class="form-partners">
+                <h2>Mealco’s partners get</h2>
+                <ul class="part-list">
+                  <li class="part-li">
+                    <svg>
+                      <use href="/img/sprite.svg#icon-star-list"></use>
+                    </svg>
+                    <p>Exclusivity over their territory</p>
+                  </li>
+                  <li class="part-li">
+                    <svg>
+                      <use href="/img/sprite.svg#icon-star-list"></use>
+                    </svg>
+                    <p>Free marketing</p>
+                  </li>
+                  <li class="part-li">
+                    <svg>
+                      <use href="/img/sprite.svg#icon-star-list"></use>
+                    </svg>
+                    <p>Free technology</p>
+                  </li>
+                  <li class="part-li">
+                    <svg>
+                      <use href="/img/sprite.svg#icon-star-list"></use>
+                    </svg>
+                    <p>Training</p>
+                  </li>
+                  <li class="part-li">
+                    <svg>
+                      <use href="/img/sprite.svg#icon-star-list"></use>
+                    </svg>
+                    <p>24/7 Support</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./js/form.js"></script>
   </body>
 </html>
