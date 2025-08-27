@@ -179,14 +179,4 @@ export const menuPressedList = [
       },
     ],
   },
-  // {
-  //   name: 'Cold-Pressed Juices',
-  //   items: [
-  //     {
-  //       product: 'Greens',
-  //       price: '$6.99',
-  //       imgUrl: `${pressedJuicesgreens}`,
-  //     },
-  //   ],
-  // },
 ];
