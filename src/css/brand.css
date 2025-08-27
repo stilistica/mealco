@@ -184,6 +184,9 @@
   display: grid;
   gap: 5px;
 }
+.menu-info {
+  padding-left: 28px;
+}
 .menu-name {
   font-family: var(--font-family);
   font-weight: 900;
@@ -358,6 +361,9 @@
   }
   .menu-item div {
     gap: 14px;
+  }
+  .menu-info {
+    padding-left: 46px;
   }
   .menu-name {
     font-weight: 900;

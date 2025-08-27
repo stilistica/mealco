@@ -12,11 +12,21 @@ export function renderMenu(menu, containerSelector) {
         .map(
           item => `
         <li class="menu-item">
-          <img src="${item.imgUrl}" alt="${item.product}"/>
-          <div>
-          <p class="menu-name">${item.product}</p>
-          <p class="menu-price">${item.price}</p>
-          </div>
+          ${
+            item.imgUrl && item.imgUrl.trim() !== ''
+              ? `
+            <img src="${item.imgUrl}" alt="${item.product}"/>
+            <div>
+              <p class="menu-name">${item.product}</p>
+              <p class="menu-price">${item.price}</p>
+            </div>`
+              : `
+            <div class="menu-info">
+              <p class="menu-name">${item.product}</p>
+              <p class="menu-price">${item.price}</p>
+            </div>
+            `
+          }
         </li>
         `
         )
