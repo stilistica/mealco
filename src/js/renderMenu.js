@@ -42,6 +42,11 @@ export function renderFilters(menu, filterSelector, listContainer) {
   const container = document.querySelector(filterSelector);
   const list = document.querySelector(listContainer);
 
+  if (menu.length <= 1) {
+    container.innerHTML = '';
+    return;
+  }
+  
   const categories = ['All', ...menu.map(cat => cat.name)];
 
   container.innerHTML = categories
