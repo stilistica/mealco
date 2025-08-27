@@ -53,14 +53,4 @@ export const menuNuchasList = [
       },
     ],
   },
-  // {
-  //   name: '',
-  //   items: [
-  //     {
-  //       product: '',
-  //       price: '$',
-  //       imgUrl: `${}`,
-  //     },
-  //   ],
-  // },
 ];
