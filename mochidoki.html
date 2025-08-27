@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mochidoki</title>
-    <script type="module" crossorigin src="/mealco/assets/styles-DjpZFpmI.js"></script>
-    <script type="module" crossorigin src="/mealco/assets/header-BM3AV4Bt.js"></script>
+    <script type="module" crossorigin src="/mealco/mochidoki.js"></script>
+    <link rel="modulepreload" crossorigin href="/mealco/assets/styles-DjpZFpmI.js">
+    <link rel="modulepreload" crossorigin href="/mealco/assets/header-BM3AV4Bt.js">
+    <link rel="modulepreload" crossorigin href="/mealco/assets/renderMenu-CgYKLdIr.js">
     <link rel="stylesheet" crossorigin href="/mealco/assets/styles-CjonJjvi.css">
   </head>
   <body>
@@ -113,9 +115,11 @@
       </section>
       <h1 class="ben-title container">Menu</h1>
       <section class="border border-top color-mochidoki">
-        <div class="container-menu">
-          <ul class="filter-menu"></ul>
-          <ul class="list-menu"></ul>
+        <div class="container">
+          <div class="container-menu">
+            <ul class="filter-menu"></ul>
+            <ul class="list-menu"></ul>
+          </div>
         </div>
       </section>
     </main>
