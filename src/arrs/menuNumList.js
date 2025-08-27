@@ -83,14 +83,4 @@ export const menuNumList = [
       },
     ],
   },
-  // {
-  //   name: '',
-  //   items: [
-  //     {
-  //       product: 'Greens',
-  //       price: '$6.99',
-  //       imgUrl: `${pressedJuicesgreens}`,
-  //     },
-  //   ],
-  // },
 ];
