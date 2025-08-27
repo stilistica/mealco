@@ -88,14 +88,4 @@ export const menuCayenneList = [
       },
     ],
   },
-  // {
-  //   name: '',
-  //   items: [
-  //     {
-  //       product: '',
-  //       price: '',
-  //       imgUrl: '',
-  //     },
-  //   ],
-  // },
 ]
