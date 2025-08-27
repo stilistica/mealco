@@ -108,6 +108,90 @@
   flex-direction: column;
   gap: 40px;
 }
+.filter-menu {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+.filter-menu::-webkit-scrollbar {
+  display: none;
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  font-weight: 700;
+  font-size: 20px;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  opacity: 1;
+  position: relative;
+}
+
+.filter-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6px;
+  height: 6px;
+  background: var(--color-black);
+  border-radius: 50%;
+}
+
+.list-menu {
+  display: grid;
+  gap: 60px;
+}
+.menu-category {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu-category h2 {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 20px;
+}
+.menu-items {
+  display: grid;
+  gap: 30px;
+}
+.menu-item {
+  display: flex;
+  background-color: var(--color-white);
+  border-radius: 10px;
+  border: 1px solid var(--color-black);
+  gap: 17px;
+
+  height: 126px;
+  align-items: center;
+
+  box-shadow: 7px 7px 0px var(--color-black);
+  margin-right: 7px;
+}
+.menu-item img {
+  height: 126px;
+}
+.menu-item div {
+  display: grid;
+  gap: 5px;
+}
+.menu-name {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 18px;
+}
+.menu-price {
+  font-size: 14px;
+}
 
 @media only screen and (min-width: 1440px) {
   .brand-hero {
@@ -233,7 +317,53 @@
   .container-menu {
     padding: 60px 0 110px 0;
   }
-  .filter-menu {
+  /* .filter-menu {
     display: none;
+  } */
+  .filter-menu {
+    gap: 60px;
+  }
+  .filter-btn {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  .filter-btn.active::after {
+    bottom: -15px;
+    width: 10px;
+    height: 10px;
+  }
+  .list-menu {
+    gap: 100px;
+  }
+  .menu-category {
+    gap: 40px;
+  }
+  .menu-category h2 {
+    font-size: 32px;
+  }
+  .menu-items {
+    gap: 42px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .menu-item {
+    gap: 46px;
+
+    height: 265px;
+
+    box-shadow: 12px 12px 0px var(--color-black);
+    margin-right: 12px;
+  }
+  .menu-item img {
+    height: 265px;
+  }
+  .menu-item div {
+    gap: 14px;
+  }
+  .menu-name {
+    font-weight: 900;
+    font-size: 24px;
+  }
+  .menu-price {
+    font-size: 22px;
   }
 }
