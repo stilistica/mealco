@@ -5,11 +5,9 @@ const containerBrands = document.querySelector('.brands-cards-list');
 const cardsHtmlBrands = brandsCards.map(({ imgUrl, iconUrl, pageUrl }) => {
   return `
   <li class="brands-card swiper-slide">
-    <img src="${imgUrl}" alt="${imgUrl}" />
+    <img class='brands-img' src="${imgUrl}" alt="${imgUrl}" />
     <div class="brands-card-div">
-      <svg>
-        <use href="${iconUrl}"></use>
-      </svg>
+      <img class='brands-svg' src="${iconUrl}" alt="${iconUrl}" />
       <div class="brand-car-more">
         <a href="${pageUrl}">
         Learn more!
